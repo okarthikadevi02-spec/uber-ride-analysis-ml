@@ -1,18 +1,18 @@
-# IPL Match Analysis and Prediction using Machine Learning
+# Uber Ride Analysis and Prediction using Machine Learning
 
 ## Project Overview
-This project focuses on analyzing Indian Premier League (IPL) match data and building machine learning models to predict match outcomes. It involves data preprocessing, exploratory data analysis, and predictive modeling to understand team performance and match trends.
+This project focuses on analyzing Uber ride data to understand travel patterns, demand trends, and pricing behavior. It also applies machine learning techniques to predict ride-related outcomes such as fare amount or trip demand.
 
 ---
 
 ## Dataset Information
-The dataset contains historical IPL match data with features such as:
+The dataset contains information related to Uber rides, including:
 
-- Team names  
-- Venue  
-- Toss winner and decision  
-- Match results  
-- Player performance details  
+- Pickup and dropoff locations  
+- Date and time of ride  
+- Fare amount  
+- Passenger count  
+- Distance traveled  
 
 ---
 
@@ -31,7 +31,7 @@ The dataset contains historical IPL match data with features such as:
 2. Data Cleaning  
 3. Exploratory Data Analysis (EDA)  
 4. Feature Engineering  
-5. Data Encoding  
+5. Data Preprocessing  
 6. Train-Test Split  
 7. Model Building  
 8. Model Evaluation  
@@ -40,57 +40,59 @@ The dataset contains historical IPL match data with features such as:
 
 ## Data Preprocessing
 - Handled missing values  
-- Converted categorical variables using encoding  
-- Selected relevant features for prediction  
+- Converted datetime columns  
+- Extracted features such as hour, day, and month  
+- Removed outliers in fare and distance  
 
 ---
 
 ## Exploratory Data Analysis
-- Match wins by teams  
-- Toss impact on match results  
-- Venue-based performance  
-- Player performance trends  
+- Ride distribution by hour and day  
+- Fare distribution  
+- Relationship between distance and fare  
+- Peak demand times  
 
 ---
 
 ## Machine Learning Models
-- Logistic Regression  
-- Decision Tree Classifier  
-- Random Forest Classifier  
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
 
 ---
 
 ## Model Evaluation
-- Accuracy Score  
-- Classification Report  
-- Confusion Matrix  
+- Mean Absolute Error (MAE)  
+- Mean Squared Error (MSE)  
+- R-squared Score  
 
 ---
 
 ## Key Insights
-- Toss decision has an impact on match outcomes  
-- Certain teams perform better in specific venues  
-- Historical performance helps in predicting match results  
+- Fare increases with distance  
+- Peak hours show higher ride demand  
+- Time and location significantly affect pricing  
+- Passenger count has less impact compared to distance  
 
 ---
 
 ## Conclusion
-The project successfully analyzes IPL match data and builds machine learning models to predict outcomes. It demonstrates how data-driven approaches can be applied in sports analytics.
+The project successfully analyzes Uber ride data and builds predictive models. It helps in understanding demand patterns and pricing strategies in ride-sharing systems.
 
 ---
 
 ## Future Improvements
 - Use advanced models such as XGBoost  
-- Hyperparameter tuning  
-- Real-time match prediction system  
-- Deploy using web frameworks  
+- Perform hyperparameter tuning  
+- Add real-time prediction system  
+- Deploy the model  
 
 ---
 
 ## Project Structure
-ipl-match-analysis-ml/
+uber-ride-analysis-ml/
 │
-├── ipl_analysis.ipynb  
+├── uber_analysis.ipynb  
 ├── dataset.csv  
 ├── README.md  
 
@@ -103,4 +105,4 @@ Aspiring Data Scientist
 ---
 
 ## Note
-This project is created for educational purposes and demonstrates machine learning concepts in sports analytics.
+This project is created for educational purposes and demonstrates machine learning techniques in transportation analytics.
