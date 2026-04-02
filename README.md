@@ -1,4 +1,4 @@
-# ube# IPL Match Analysis and Prediction using Machine Learning
+# IPL Match Analysis and Prediction using Machine Learning
 
 ## Project Overview
 This project focuses on analyzing Indian Premier League (IPL) match data and building machine learning models to predict match outcomes. It involves data preprocessing, exploratory data analysis, and predictive modeling to understand team performance and match trends.
